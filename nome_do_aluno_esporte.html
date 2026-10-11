@@ -9,6 +9,7 @@
     <form action="#" method="post">
         <fieldset> 
             <legend>Informação da escola</legend>
+
             <label for="escola">Nome da escola:</label>
             <input type="text" id="escola" name="escola">
 
@@ -18,10 +19,44 @@
             <label for="professor" >Professor responsavel:</label>
             <input type="text" id="professor" name="professor">
         </fieldset>
+           
+        <fieldset> 
+            <legend>Dados do aluno</legend>
+
+            <label for="nome_aluno">Nome do aluno:</label>
+            <input type="text" id="nome_aluno" name="nome_aluno">
+
+            <label for-="turma" >Turma:</label>
+            <input type="text" id="turma" name="turma">
+
+            <label for="data_nasc" >Data de nascimento:</label>
+            <input type="date" id="data_nasc" name="data_nasc">
+        </fieldset>
+
+        <fieldset>
+            <legend>Turno</legend>
+
+            <label for="matutino" >Matutino</label>
+            <input type="radio" id="matutino" name="turno">
+
+            <label for="vespertino" >Vespertino</label>
+            <input type="radio" id="vespertino" name="turno">
+
+            <label for="noturno" >Noturno</label>
+            <input type="radio" id="noturno" name="turno">
+        </fieldset>
 
         <fieldset> 
+            <legend>Modalidade esportiva</legend>
 
+            <select name="modalidade" id="modalidade">
+                <option value="nenhuma" selected disabled>Selecione uma modalidade</option>
+                <option value="futsal">Futsal</option>
+                <option value="volei">Vôlei</option>
+                <option value="handebol">Handebol</option>
+                <option value="atletismo">Atletismo</option>
         </fieldset>
+
     </form>
     <button>Enviar inscrição</button>
 </body>
