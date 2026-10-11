@@ -67,6 +67,36 @@
             <input type="radio" id="nao" name="praticou" value="nao">
             <label for="nao">Não</label>
         </fieldset>
+
+        <fieldset>
+            <legend>Possui algum problema de saúde?</legend>
+
+            <label for="problema_saude">Se sim, qual?</label>
+            <input type="text" id="problema_saude" name="problema_saude">
+
+            <input type="radio" id="sim_saude" name="problema_saude" value="sim">
+            <label for="sim_saude">Sim</label>
+
+            <input type="radio" id="nao_saude" name="problema_saude" value="nao">
+            <label for="nao_saude">Não</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do responsável</legend>
+            <label for="nome_responsavel">Nome do responsável:</label>
+            <input type="text" id="nome_responsavel" name="nome_responsavel">
+
+            <label for="telefone_responsavel">Telefone do responsável:</label>
+            <input type="tel" id="telefone_responsavel" name="telefone_responsavel">
+        </fieldset>
+
+        <fieldset>
+            <legend>Autorização</legend>
+
+            <input type="checkbox" id="autorizacao" name="autorizacao">
+            <label for="autorizacao">Autorizo a participação do aluno nas atividades esportivas da escola.</label>
+            
+        </fieldset>
         
         <button>Enviar inscrição</button>
     </form>
