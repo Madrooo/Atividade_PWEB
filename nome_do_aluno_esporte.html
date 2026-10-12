@@ -8,7 +8,7 @@
     <style> 
         body {
             font-family: Arial, sans-serif;
-            background-color: #570152;
+            background: linear-gradient(to bottom, #2c002a, #550051);
             margin: 0;
             padding: 20px;
         }
@@ -21,7 +21,7 @@
             color: #fdfcfd;
         }
         label {
-            display: auto;
+            display: block;
             margin-top: 10px;
             color: #f7f7f7;
         }
@@ -29,8 +29,20 @@
             border: 1px solid #f7a5f7;
             padding: 20px;
             margin-bottom: 20px;
+            background-color: #550051;
+            border-radius: 5px;
         }
-        
+        input[type="text"], input[type="date"], input[type="tel"], select {
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+
+        }
+        form{
+            max-width: 600px;
+            margin: auto;
+        }
+
     </style>
 </head>
 <body>
