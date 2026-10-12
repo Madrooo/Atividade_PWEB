@@ -21,4 +21,4 @@ O formulário contém os seguintes campos:
 
 ## Implementação atual
 
-A página utiliza HTML e estilos CSS definidos no próprio arquivo. O formulário é uma interface estática: ainda não há processamento, validação personalizada ou armazenamento dos dados enviados.
+A página foi construída com HTML e CSS definidos no próprio arquivo. O formulário tem largura máxima de 600 px, fica centralizado e usa um fundo em gradiente roxo, campos organizados em blocos com bordas arredondadas e espaçamento entre as seções. Os campos de texto, data, telefone e seleção ocupam a largura disponível.
