@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Esporte Escolar</title>
+    <title>Formulário de Esporte Escolar</title>
 
     <style> 
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #2c002a, #550051);
+            background-attachment: fixed;
             margin: 0;
             padding: 20px;
         }
@@ -32,11 +33,10 @@
             background-color: #550051;
             border-radius: 5px;
         }
-        input[type="text"], input[type="date"], input[type="tel"], select {
+        input[type="text"], input[type="date"], input[type="tel"], select, textarea {
             width: 100%;
             margin-bottom: 10px;
             box-sizing: border-box;
-
         }
         form{
             max-width: 600px;
@@ -46,45 +46,45 @@
     </style>
 </head>
 <body>
-    <h1>Formulario de Esporte Escolar</h1>
+    <h1>Formulário de Esporte Escolar</h1>
     <form action="#" method="post">
         <fieldset> 
-            <legend>Informação da escola</legend>
+            <legend>Informações da escola</legend>
 
             <label for="escola">Nome da escola:</label>
             <input type="text" id="escola" name="escola">
 
-            <label for="modalidae_esportiva" >Modalidade esportiva:</label>
+            <label for="modalidade_esportiva">Modalidade esportiva:</label>
             <input type="text" id="modalidade_esportiva" name="modalidade_esportiva">
 
-            <label for="professor" >Professor responsavel:</label>
+            <label for="professor">Professor responsável:</label>
             <input type="text" id="professor" name="professor">
         </fieldset>
            
         <fieldset> 
             <legend>Dados do aluno</legend>
 
-            <label for="nome_aluno">Nome do aluno:</label>
+            <label for="nome_aluno">Nome completo:</label>
             <input type="text" id="nome_aluno" name="nome_aluno">
 
-            <label for-="turma" >Turma:</label>
+            <label for="turma">Turma:</label>
             <input type="text" id="turma" name="turma">
 
-            <label for="data_nasc" >Data de nascimento:</label>
+            <label for="data_nasc">Data de nascimento:</label>
             <input type="date" id="data_nasc" name="data_nasc">
         </fieldset>
 
         <fieldset>
             <legend>Turno</legend>
 
-            <label for="matutino" >Matutino</label>
-            <input type="radio" id="matutino" name="turno">
+            <input type="radio" id="matutino" name="turno" value="matutino">
+            <label for="matutino">Matutino</label>
 
-            <label for="vespertino" >Vespertino</label>
-            <input type="radio" id="vespertino" name="turno">
+            <input type="radio" id="vespertino" name="turno" value="vespertino">
+            <label for="vespertino">Vespertino</label>
 
-            <label for="noturno" >Noturno</label>
-            <input type="radio" id="noturno" name="turno">
+            <input type="radio" id="noturno" name="turno" value="noturno">
+            <label for="noturno">Noturno</label>
         </fieldset>
 
         <fieldset> 
@@ -94,13 +94,14 @@
                 <option value="nenhuma" selected disabled>Selecione uma modalidade</option>
                 <option value="futsal">Futsal</option>
                 <option value="volei">Vôlei</option>
+                <option value="basquete">Basquete</option>
                 <option value="handebol">Handebol</option>
                 <option value="atletismo">Atletismo</option>
             </select>
         </fieldset>
         
         <fieldset>
-            <legend>Já praticou essa modalidade anterioremente?</legend>
+            <legend>Já praticou essa modalidade anteriormente?</legend>
 
             <input type="radio" id="sim" name="praticou" value="sim">
             <label for="sim">Sim</label>
@@ -112,18 +113,19 @@
         <fieldset>
             <legend>Possui algum problema de saúde?</legend>
 
-            <label for="problema_saude">Se sim, qual?</label>
-            <input type="text" id="problema_saude" name="problema_saude">
-
-            <input type="radio" id="sim_saude" name="problema_saude" value="sim">
+            <input type="radio" id="sim_saude" name="possui_problema" value="sim">
             <label for="sim_saude">Sim</label>
 
-            <input type="radio" id="nao_saude" name="problema_saude" value="nao">
+            <input type="radio" id="nao_saude" name="possui_problema" value="nao">
             <label for="nao_saude">Não</label>
+
+            <label for="problema_saude">Se sim, quais restrições de saúde?</label>
+            <textarea id="problema_saude" name="problema_saude" rows="4"></textarea>
         </fieldset>
 
         <fieldset>
             <legend>Dados do responsável</legend>
+
             <label for="nome_responsavel">Nome do responsável:</label>
             <input type="text" id="nome_responsavel" name="nome_responsavel">
 
@@ -135,17 +137,10 @@
             <legend>Autorização</legend>
 
             <input type="checkbox" id="autorizacao" name="autorizacao">
-            <label for="autorizacao">Autorizo a participação do aluno nas atividades esportivas da escola.</label>
-
+            <label for="autorizacao">Autorizo a participação do aluno nas atividades esportivas.</label>
         </fieldset>
         
-        <button>Enviar inscrição</button>
+        <button type="submit">Enviar inscrição</button>
     </form>
 </body>
 </html>
-
-
-
-
-
-
