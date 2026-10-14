@@ -26,10 +26,6 @@ Abra `nome_do_aluno_esporte.html` em um navegador. O projeto não precisa de ins
 | Checkbox com a autorização de participação | **Concluído.** O texto da autorização está presente junto à caixa de seleção. |
 | Botão “Enviar inscrição” | **Concluído.** O botão de envio está presente. |
 
-## Identificação acadêmica do enunciado
-
-O enunciado também apresenta os dados do Instituto Federal de Educação, Ciência e Tecnologia do Ceará — Campus Iguatu, professor, disciplina, curso, data, aluno e turma. **Esses dados de identificação não aparecem atualmente no HTML.** O formulário possui um campo para a turma do aluno, mas não campos ou cabeçalho para os demais dados.
-
 ## Estilo e funcionamento
 
 O CSS está definido dentro do próprio arquivo HTML. A página usa fundo em gradiente roxo, seções com bordas arredondadas e campos organizados em blocos centralizados com largura máxima de 600 px.
